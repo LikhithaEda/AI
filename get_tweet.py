@@ -8,7 +8,7 @@ search_list = ["vote",
             "uselection",
             "election",
             "stimulus check",
-            "biden lied",
+            "joe biden",
             "stimulus",
             "climate change",
             "environment",
@@ -16,7 +16,7 @@ search_list = ["vote",
 
 # Create a search list
 hashtags = ["#stimuluscheck",
-            "#bidenlied",
+            "#biden",
             "#stimulus",
             "#climatechange",
             "#environment",
@@ -38,6 +38,7 @@ access_token_secret= "FR2l4XIdk26k8DEaqqsBVkAXpD9RqAoehRtOvO6eJVRpG"
 auth = tweepy.OAuthHandler(consumer_key, consumer_key_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
+
 # Define a function to get tweets
 def get_tweets(search, isHashtag):
     
